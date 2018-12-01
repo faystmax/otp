@@ -4,16 +4,12 @@
 %%% @doc
 %%%
 %%% @end
-%%% Created : 30. Нояб. 2018 22:13
+%%% Created : 02. Дек. 2018 1:27
 %%%-------------------------------------------------------------------
--module(factorial).
+-module(parsePoliceBribe).
 -author("Макс").
 
-%% API
--export([factorial/1]).
+-compile(export_all).
 
-factorial(N) ->
-  gen_event:notify(log_event, {calculate, N}),
-  factor(N).
-factor(0) -> 1;
-factor(N) -> N * factor(N - 1).
+parse(_) ->
+  gen_event:notify(log_event, {fakePolice}).

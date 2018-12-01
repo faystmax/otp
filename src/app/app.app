@@ -7,10 +7,10 @@
 %%% Created : 30. Нояб. 2018 22:19
 %%%-------------------------------------------------------------------
 {application, app, [
-  {description, "test"},
-  {vsn, "0.9"},
-  {modules, [app, my_supervisor, factorial, server]},
-  {registered, [server, my_supervisor]},
+  {description, "otpLab"},
+  {vsn, "1.0"},
+  {modules, [app, main_supervisor, log_event, tree, wind, street, janitor, student, police]},
+  {registered, [tree, main_supervisor, log_event, tree, wind, street, janitor, student, police]},
   {applications, [kernel, stdlib]},
   {mod, {app, []}},
   {env, []},
